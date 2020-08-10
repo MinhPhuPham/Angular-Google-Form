@@ -1,0 +1,23 @@
+<div class="right-panel">
+    <div class="head-content">
+        <div class="right-title">
+            <p>Form Builder</p>
+        </div>
+        <div class="left-tool">
+            <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>Action - 1</button>
+                  <button ngbDropdownItem>Another Action</button>
+                  <button ngbDropdownItem>Something else is here</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <formly-form [model]="model" [fields]="fields" [form]="form"></formly-form>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.right-panel{
+    padding: 10px;
+   
+    .head-content{
+        display: flex;
+        justify-content: space-between;
+        .right-title{
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    }
+
+    .body-content{
+        border-radius: 5px;
+        border: 1px solid rgb(218, 209, 209);
+        padding: 10px 5px;
+    }
+}
