@@ -1,18 +1,49 @@
-.right-panel{
+.right-panel {
     padding: 10px;
-   
-    .head-content{
+
+    .head-content {
         display: flex;
         justify-content: space-between;
-        .right-title{
+
+        .right-title {
             font-weight: 500;
             font-size: 1.2rem;
         }
     }
 
-    .body-content{
+    .body-content {
         border-radius: 5px;
         border: 1px solid rgb(218, 209, 209);
         padding: 10px 5px;
     }
+}
+
+.section-page {
+    border: 1px solid rgb(214, 209, 209);
+    border-radius: 5px;
+    position: relative;
+}
+
+.page-infor {
+    background-color: #eee;
+    display: inline-block;
+    height: 20px;
+
+    span {
+        color: #4d4d4d;
+        font: 400 11px arial, sans-serif;
+        padding: 0 4px;
+        position: relative;
+        top: 3px;
+        vertical-align: top;
+    }
+}
+
+.page-infor-triage {
+    border-right: 20px solid transparent;
+    border-top: 20px solid #eee;
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    width: 0;
 }

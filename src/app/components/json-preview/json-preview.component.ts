@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SimpleChanges, Input } from '@angular/core';
 import { Observable, of } from "rxjs";
 @Component({
   selector: 'app-json-preview',
@@ -7,15 +7,22 @@ import { Observable, of } from "rxjs";
 })
 export class JsonPreviewComponent implements OnInit {
 
+  @Input() data: any;
   constructor() { }
 
+  model;
+
   ngOnInit(): void {
+    
   }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if(!changes.data) return;
+    this.model = changes.data.currentValue
+  }
+
   fakeValidateUserData() {
-    return of({
-      userDate1: 1,
-      userData2: 2
-    });
+    return of(this.model);
   }
 
   //

@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormlyModule } from '@ngx-formly/core';
-import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { DndModule } from 'ngx-drag-drop';
 
 import { FooterComponent } from './_layout/footer/footer.component';
 import { HeaderComponent } from './_layout/header/header.component';
@@ -16,6 +17,9 @@ import { OptionsComponentsComponent } from './components/options-components/opti
 import { RightWorkplaceComponent } from './components/right-workplace/right-workplace.component';
 import { LeftWorkplaceComponent } from './components/left-workplace/left-workplace.component';
 import { JsonPreviewComponent } from './components/json-preview/json-preview.component';
+
+
+import { AlertService } from './services/alert.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +36,13 @@ import { JsonPreviewComponent } from './components/json-preview/json-preview.com
     AppRoutingModule,
     ReactiveFormsModule,
     NgbModule,
-    FormlyModule.forRoot(),
-    FormlyBootstrapModule,
+    DndModule,
+    FormsModule,
     
   ],
-  providers: [],
+  providers: [
+    AlertService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

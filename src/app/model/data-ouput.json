@@ -1,0 +1,362 @@
+{
+    "name": "Form Name",
+    "description": "Description",
+    "pages": [
+        {
+            "id": "e015f9f0b54e21593f6c8b4866e3bdb1",
+            "number": 1,
+            "name": null,
+            "description": null,
+            "pageFlow": {
+                "page": {
+                    "id": "55b2e070ecadf6ff051416db3d9d107e",
+                    "number": 2
+                },
+                "label": "DynamicForm.pageFlow.goToPage"
+            },
+            "elements": [
+                {
+                    "id": "cbd9b1b69141e9a465398cbec8302993",
+                    "orderNo": 1,
+                    "type": "question",
+                    "question": {
+                        "id": "e70e8b35ad2c1d0cfcf7c28340f604c7",
+                        "title": "Some thing in here",
+                        "description": "description or null",
+                        "type": "text",
+                        "required": true,
+                        "expanded": {
+                            "isDescriptionShow": false,
+                            "isValidationShow": false
+                        },
+                        "validation": [
+                            {
+                                "selected": "text",
+                                "hint": "Some text demo"
+                            },
+                            {
+                                "selected": "phoneNumber",
+                                "regexFormat": "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$",
+                                "errorMessage": "Should correct Phone Number"
+                            },
+                            {
+                                "selected": "email",
+                                "regexFormat": "^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$",
+                                "errorMessage": "Should correct Email Type"
+                            },
+                            {
+                                "selected": "url",
+                                "regexFormat": "^((ftp|http|https):\/\/)?www\\.([A-z]+)\\.([A-z]{2,})",
+                                "errorMessage": "Should correct URL Format"
+                            }
+                        ],
+                        "pageFlowModifier": false
+                    }
+                },
+                {
+                    "id": "cd76469d5184b3af4807aa43a60d4d5b",
+                    "orderNo": 2,
+                    "type": "question",
+                    "question": {
+                        "id": "29ee2a60dbd646a09a20bdada3fbf97b",
+                        "title": "Some thing in title",
+                        "description": null,
+                        "typeSelection": "AreaText",
+                        "hint": "Some text demo",
+                        "type": "textarea",
+                        "required": true,
+                        "pageFlowModifier": false
+                    }
+                },
+                {
+                    "id": "214aad29d30862c4e76e487b363d5bc8",
+                    "orderNo": 3,
+                    "type": "question",
+                    "question": {
+                        "id": "a4eb401ee941edc87e6be8ddc1e8c852",
+                        "title": "Some thing in title",
+                        "hint": "Some text demo",
+                        "description": null,
+                        "type": "radio",
+                        "required": true,
+                        "offeredAnswers": [
+                            {
+                                "id": "51f4e92e7fa1365dfa1411d94e5f3c45",
+                                "orderNo": 1,
+                                "value": "Some thing in options name"
+                            },
+                            {
+                                "id": "1185313793f96c10708a4a80b5eaa181",
+                                "orderNo": 2,
+                                "value": "Some thing in options name 2"
+                            },
+                            {
+                                "id": "498c2ab9dfbbaf792bf003b1c76b2051",
+                                "orderNo": 3,
+                                "value": "Some thing in options name 3"
+                            }
+                        ],
+                        "pageFlowModifier": true,
+                        "otherAnswer": true
+                    }
+                },
+                {
+                    "id": "9933899aab197621ce9a1b33b706fa83",
+                    "orderNo": 4,
+                    "type": "question",
+                    "question": {
+                        "id": "57541b580769dd9f20461c1d9ec28ccd",
+                        "title": "Some thing in title",
+                        "description": null,
+                        "hint": "Some text demo",
+                        "type": "select",
+                        "required": true,
+                        "offeredAnswers": [
+                            {
+                                "id": "96674eb31c02d3641e233665c5dcb88b",
+                                "orderNo": 1,
+                                "value": "Some thing in options name",
+                                "pageFlow": {
+                                    "nextPage": true,
+                                    "label": "DynamicForm.pageFlow.goToNextPage"
+                                }
+                            },
+                            {
+                                "id": "d551667915ab09983f41ee71ca62469b",
+                                "orderNo": 2,
+                                "value": "Some thing in options name",
+                                "pageFlow": {
+                                    "nextPage": true,
+                                    "label": "DynamicForm.pageFlow.goToNextPage"
+                                }
+                            },
+                            {
+                                "id": "25df112a75333511268bb92a254f7f70",
+                                "orderNo": 3,
+                                "value": "Some thing in options name",
+                                "pageFlow": {
+                                    "nextPage": true,
+                                    "label": "DynamicForm.pageFlow.goToNextPage"
+                                }
+                            },
+                            {
+                                "id": "9308f836955eb08ad150e83d4e42dd14",
+                                "orderNo": 4,
+                                "value": "Some thing in options name",
+                                "pageFlow": {
+                                    "nextPage": true,
+                                    "label": "DynamicForm.pageFlow.goToNextPage"
+                                }
+                            }
+                        ],
+                        "pageFlowModifier": false
+                    }
+                },
+                {
+                    "id": "7f36173bed6d0c70373a47bd8a70ab7b",
+                    "orderNo": 5,
+                    "type": "question",
+                    "question": {
+                        "id": "62fe55277b441edf82a78b3025660894",
+                        "title": "Some thing in title",
+                        "description": null,
+                        "hint": "Some text demo",
+                        "type": "checkbox",
+                        "required": true,
+                        "offeredAnswers": [
+                            {
+                                "id": "fbe892a5cc8df1df1d1826ece6d85895",
+                                "orderNo": 1,
+                                "value": "Some thing in options name",
+                                "pageFlow": {
+                                    "nextPage": true,
+                                    "label": "DynamicForm.pageFlow.goToNextPage"
+                                }
+                            },
+                            {
+                                "id": "7ded15bb5c56b4f445210a8e3624ebbc",
+                                "orderNo": 2,
+                                "value": "Some thing in options name",
+                                "pageFlow": {
+                                    "nextPage": true,
+                                    "label": "DynamicForm.pageFlow.goToNextPage"
+                                }
+                            }
+                        ],
+                        "pageFlowModifier": false,
+                        "otherAnswer": true
+                    }
+                },
+                {
+                    "id": "740b4a19ca340d6c19fb6e718927375c",
+                    "orderNo": 6,
+                    "type": "question",
+                    "question": {
+                        "id": "5fb2bc79e640de0624a7d1c9a49d9f42",
+                        "title": "Some thing in title",
+                        "description": null,
+                        "type": "number",
+                        "required": true,
+                        "pageFlowModifier": false,
+                        "expanded": {
+                            "isDescriptionShow": false,
+                            "isValidationShow": false
+                        },
+                        "validation": [
+                            {
+                                "type": "number_min",
+                                "min": 1,
+                                "hint":"",
+                                "errorMessage":""
+                            },
+                            {
+                                "type": "number_max",
+                                "max": 10,
+                                "hint":"",
+                                "errorMessage":""
+                            },
+                            {
+                                "type": "number_range",
+                                "min": 1,
+                                "max": 10,
+                                "hint":"",
+                                "errorMessage":""
+                            },
+                            {
+                                "type": "number_equal",
+                                "num": 2,
+                                "hint":"",
+                                "errorMessage":""
+                            },
+                            {
+                                "type": "number_notequal",
+                                "num": 2,
+                                "hint":"",
+                                "errorMessage":""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "8fce5169bccbfd865ab8797e7febeb8d",
+                    "orderNo": 7,
+                    "type": "question",
+                    "question": {
+                        "id": "e4f4670bea7131a213a62ae2c23a8f72",
+                        "title": "Some thing in title",
+                        "description": null,
+                        "hint": "Some text demo",
+                        "type": "date",
+                        "required": true,
+                        "pageFlowModifier": false
+                    }
+                },
+                {
+                    "id": "5a874e5511e24fe79ade4528f816de43",
+                    "orderNo": 9,
+                    "type": "image",
+                    "image": {
+                        "id": "e40d090eb86175a9727f0198ee70b2f3",
+                        "align": "left",
+                        "hint": "Some text demo",
+                        "src": "https://miro.medium.com/max/875/1*b8p-_OEC3ld6wxcjFOmSQQ.png",
+                        "caption": "Some thing in image"
+                    }
+                },
+                {
+                    "id": "98956d95245077fc43c40feb8ac3bd98",
+                    "orderNo": 10,
+                    "type": "paragraph",
+                    "paragraph": {
+                        "id": "957cef313579e25d639701795c5f6faa",
+                        "hint": "Some text demo",
+                        "html": "<!DOCTYPE html><html lang=\"en\"><head>\n<meta charset=\"utf-8\">\n<title>JavaScript form validation - checking non-empty</title>\n<link rel='stylesheet' href='form-style.css' type='text/css' />      \n</head>\n<body onload='document.form1.text1.focus()'>\n<div class=\"mail\">\n<h2>Input an Phone No.[xxx-xxx-xxxx, xxx.xxx.xxxx, xxx xxx xxxx] and Submit</h2>\n<form name=\"form1\" action=\"#\"> \n<ul>\n<li><input type='text' name='text1'/></li>\n<li>&nbsp;</li>\n<li class=\"submit\"><input type=\"submit\" name=\"submit\" value=\"Submit\" onclick=\"phonenumber(document.form1.text1)\"/></li>\n<li>&nbsp;</li>\n</ul>\n</form>\n</div>\n<script src=\"phoneno-international-format.js\"></script>\n</body>\n</html>"
+                    }
+                }
+            ],
+            "namedPage": false,
+            "isFirst": true,
+            "isLast": false
+        },
+        {
+            "id": "55b2e070ecadf6ff051416db3d9d107e",
+            "number": 2,
+            "name": null,
+            "description": null,
+            "pageFlow": {
+                "nextPage": true,
+                "label": "DynamicForm.pageFlow.goToNextPage"
+            },
+            "elements": [
+                {
+                    "id": "e1d2353b62233e1129171279a69a1d06",
+                    "orderNo": 1,
+                    "type": "question",
+                    "question": {
+                        "id": "1c126f14ea4bb4020ccd8703f6f355c4",
+                        "title": "Some thing in title",
+                        "hint": "Some text demo",
+                        "description": null,
+                        "type": "textarea",
+                        "required": true,
+                        "pageFlowModifier": false
+                    }
+                }
+            ],
+            "namedPage": false
+        },
+        {
+            "id": "156e58ad3e36c40273d3ca535f0ca929",
+            "number": 3,
+            "name": null,
+            "description": null,
+            "pageFlow": {
+                "formSubmit": true,
+                "label": "mwForm.pageFlow.submitForm"
+            },
+            "elements": [
+                {
+                    "id": "958d010f2456744c03bb75d0422e3367",
+                    "orderNo": 1,
+                    "type": "question",
+                    "question": {
+                        "id": "98314df45dce193e0f0ca5ad3101a02e",
+                        "title": "câcsc",
+                        "description": null,
+                        "hint": "Some text demo",
+                        "type": "textarea",
+                        "required": true,
+                        "pageFlowModifier": false
+                    }
+                }
+            ],
+            "namedPage": false
+        },
+        {
+            "id": "fe3213021ef5a356598f8436b0662008",
+            "number": 4,
+            "name": null,
+            "description": null,
+            "pageFlow": {
+                "nextPage": true,
+                "label": "DynamicForm.pageFlow.goToNextPage"
+            },
+            "elements": [
+                {
+                    "id": "34f0c85950145cacce0044a9780614bc",
+                    "orderNo": 1,
+                    "type": "image",
+                    "image": {
+                        "id": "55394159fb01c3608834b7b92c208edd",
+                        "align": "center",
+                        "hint": "Some text demo",
+                        "src": "https://www.w3resource.com/w3r_images/javascript-phone-validation-10-digit.png",
+                        "caption": "Some thing here"
+                    }
+                }
+            ],
+            "namedPage": false
+        }
+    ],
+    "confirmationMessage": "Thanks for your submit"
+}
