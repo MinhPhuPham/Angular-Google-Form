@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'Dynamic-form'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Dynamic-form');
+    expect(app.title).toEqual('Dynamic-form-s');
   });
 
   it('should render title', () => {
